@@ -259,8 +259,6 @@ python-app-CICD/
 
 ## ⭐ Support
 
-## ⭐ Support
-
 If you found this project helpful, please give it a ⭐ on **GitHub**!  
 Sharing helps others learn **automation the smart way** 🧠  
 
