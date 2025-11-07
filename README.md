@@ -14,6 +14,11 @@ The pipeline automatically builds, deploys, and runs your Python app every time 
 - **Jenkins Server** fetches the code, builds, and automates deployment.  
 - **Deployment Server** runs the Python app automatically with **PM2**.
 
+
+![a](IMG/7.png)
+
+
+
 ---
 
 ## ☁️ Infrastructure Overview
@@ -37,6 +42,11 @@ We use **two EC2 instances**:
   - Port **22** (SSH)
   - Port **8080** (Jenkins)
   - Port **5000** or your app’s port
+
+
+![b](IMG/2.png)
+
+
 
 ---
 
@@ -110,6 +120,11 @@ git add .
 git commit -m "Initial commit"
 git push origin main
 ```
+
+![c](IMG/3.png)
+
+
+
 ## 🔹 Step 6: Add SSH Credentials in Jenkins
 
 1. Go to **Jenkins → Manage Jenkins → Credentials → Global → Add Credentials**  
@@ -121,6 +136,12 @@ ID: node-key
 Username: ubuntu
 Private key: (paste from ~/.ssh/id_rsa)
 ```
+
+
+![d](IMG/4.png)
+
+
+
 ## 🔹 Step 7: Create a New Pipeline Job
 
 1. Open **Jenkins → New Item → Pipeline**  
@@ -134,6 +155,11 @@ Private key: (paste from ~/.ssh/id_rsa)
    - Set **Branch** to:  **main**
 
 4. Click **Save**
+
+
+![e](IMG/5.png)
+
+
 
 ## 🔹 Step 8: Jenkinsfile (Pipeline Script)
 ```bash
@@ -202,6 +228,11 @@ http://<jenkins-server-ip>:8080/github-webhook/
 
 5.Save webhook ✅
 
+
+![f](IMG/6.png)
+
+
+
 ## 🔹 Step 10: Run the Pipeline
 
 1.Go to Jenkins → Your Pipeline → **Build Now**
@@ -212,6 +243,12 @@ http://<jenkins-server-ip>:8080/github-webhook/
 ```bash
 http://<deployment-server-ip>:5000
 ```
+
+
+![h](IMG/1.png)
+
+
+
 ## 🧠 Pipeline Flow Summary
 
 | **Stage** | **Description** |
