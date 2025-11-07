@@ -254,7 +254,7 @@ python-app-CICD/
 **Ganesh Jadhav**  
 💼 AWS | DevOps | Python Developer  
 🔗 [GitHub Profile](https://github.com/iam-ganeshjadhav)
-🔗 **Connect with me on LinkedIn:** [Ganesh Jadhav](https://www.linkedin.com/in/ganesh-jadhav)
+🔗 [LinkedIn] [Ganesh Jadhav](https://www.linkedin.com/in/ganesh-jadhav)
 ---
 
 ## ⭐ Support
